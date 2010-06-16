@@ -1,0 +1,395 @@
+html * {
+    margin: 0;
+    /*padding: 0; SELECT NOT DISPLAYED CORRECTLY IN FIREFOX */
+}
+
+/* GENERAL */
+
+.spinner {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font: 11px verdana, arial, helvetica, sans-serif;
+}
+
+#grailsLogo {
+	padding:20px;
+}
+
+
+a:link, a:visited, a:hover {
+    font-weight: bold;
+}
+
+a:link, a:visited {
+  color: #027AC6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0062A0;
+  text-decoration: underline;
+}
+
+a:active, a.active {
+  color: #5895be;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #48802c;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: .8em 0 .3em 0;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+.body {
+	margin: 20px 20px 20px 280px;
+}
+
+/* NAV MENU */
+
+#nav {
+	margin-top:20px;
+	margin-left:30px;
+	width:228px;
+	float:left;
+
+}
+#nav * {
+	margin:0px;
+}
+#nav .panelBody ul {
+	list-style-type:none;
+	margin-bottom:10px;
+}
+#nav .panelBody h1,
+#nav .panelBody h2 {
+	text-transform:uppercase;
+}
+#nav .panelBody {
+    background: url(../images/leftnav_midstretch.png) repeat-y top;
+	margin:0px;
+	padding:15px;
+}
+#nav .panelBtm {
+    background: url(../images/leftnav_btm.png) no-repeat top;
+	height:20px;
+	margin:0px;
+}
+
+#nav .panelTop {
+    background: url(../images/leftnav_top.png) no-repeat top;
+	height:11px;
+	margin:0px;
+}
+h2 {
+	margin-top:15px;
+	margin-bottom:15px;
+	font-size:1.2em;
+}
+
+/* FORM ELEMENTS */
+
+fieldset legend {
+	color: #027AC6;
+	font-style: italic;
+	padding: 0 .5em 0 .5em
+}
+
+label {
+	width: 150px;
+	float: left;
+}
+label.textArea {
+	width: 100%;
+	/* float: none; */
+}
+
+input, select, textarea {
+    background-color: #fcfcfc;
+    border: 1px solid #aaa;
+    font: 11px verdana, arial, helvetica, sans-serif;
+    margin: 2px 0;
+    padding: 2px 4px;
+}
+textarea {
+	width: 100%;
+	vertical-align: top;
+}
+select {
+	padding: 2px 2px 2px 0px;
+}
+
+select, input[type='text'] {
+	min-width: 200px;
+}
+
+/* specialty styles for Client edit screens */
+div#languagesDIV + div {
+	/*clear the float of the language checkboxes div*/
+	clear: both;
+}
+
+/* specialty label tags */
+label[for='genderInfo'],
+label[for='sexualOrientationInfo'],
+label[for='raceInfo'],
+label[for='languageInfo'] {
+	text-align: right;
+}
+
+/* specialty select tags */
+select#dateOfBirth_day,
+select#dateOfBirth_month,
+select#dateOfBirth_year {
+	min-width: 0px
+}
+select#incidentDate_day,
+select#incidentDate_month,
+select#incidentDate_year {
+	min-width: 0px
+}
+select#intakeDate_day,
+select#intakeDate_month,
+select#intakeDate_year,
+select#intakeDate_hour,
+select#intakeDate_minute {
+	min-width: 0px
+}
+select#dateOfService_day,
+select#dateOfService_month,
+select#dateOfService_year,
+select#dateOfService_hour,
+select#dateOfService_minute {
+	min-width: 0px
+}
+
+/*
+textarea {
+	width: 250px;
+	height: 150px;
+	vertical-align: top;
+}
+*/
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid #b2d1ff;
+}
+
+input[type='checkbox'] + span.checkboxItem {
+	margin: 0em 2em 0em 0.5em;
+}
+
+/* MESSAGES AND ERRORS */
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px
+}
+
+div.errors {
+    background: #fff3f3;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;
+}
+div.errors li {
+	background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+}
+
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+
+/* TABLES */
+
+table {
+    border: 1px solid #ccc;
+    width: 100%
+}
+tr {
+    border: 0;
+}
+td, th {
+    font: 11px verdana, arial, helvetica, sans-serif;
+    line-height: 12px;
+    padding: 5px 6px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background: #fff url(../images/skin/shadow.jpg);
+    color: #666;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 2px 6px;
+}
+th a:link, th a:visited, th a:hover {
+    color: #333;
+    display: block;
+    font-size: 10px;
+    text-decoration: none;
+    width: 100%;
+}
+th.asc a, th.desc a {
+    background-position: right;
+    background-repeat: no-repeat;
+}
+th.asc a {
+    background-image: url(../images/skin/sorted_asc.gif);
+}
+th.desc a {
+    background-image: url(../images/skin/sorted_desc.gif);
+}
+
+.odd {
+    background: #f7f7f7;
+}
+.even {
+    background: #fff;
+}
+
+/* LIST */
+
+.list table {
+    border-collapse: collapse;
+}
+.list th, .list td {
+    border-left: 1px solid #ddd;
+}
+.list th:hover, .list tr:hover {
+    background: #b2d1ff;
+}
+
+/* PAGINATION */
+
+.paginateButtons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-top: 0;
+    color: #666;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 10px 3px;
+}
+.paginateButtons a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #666;
+    margin: 0 3px;
+    padding: 2px 6px;
+}
+.paginateButtons span {
+    padding: 2px 3px;
+}
+
+/* DIALOG */
+
+.dialog table {
+    padding: 5px 0;
+}
+
+.prop {
+    padding: 5px;
+}
+.prop .name {
+    text-align: left;
+    width: 15%;
+    white-space: nowrap;
+}
+.prop .value {
+    text-align: left;
+    width: 85%;
+}
+
+/* ACTION BUTTONS */
+
+.buttons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.buttons input {
+    background: #fff;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 3px;
+    overflow: visible;
+    padding: 2px 6px;
+}
+.buttons input.delete {
+    background: transparent url(../images/skin/database_delete.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.edit {
+    background: transparent url(../images/skin/database_edit.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.save {
+    background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+/* SPECIAL STYLES FOR RAAP */
+
+div.clientList {
+	width: 600px;
+	border: 2px solid #CCCCCC;
+	padding: 5px;
+	margin-top: 20px;
+}
+
+div.clientList h3 {
+	color: #666666;
+	text-align: center;
+	border-bottom: 2px solid #CCCCCC;
+}
+
+div.clientList table {
+	margin: 0.5em 0 0 0 ;
+}
+
+/* Configure the Languages field to float left of it's "additional info" field. */
+div#languagesValuesDIV {
+	width: 450px;
+	float: left;
+}
+div#languagesValuesDIV > div {
+	width: 125px;
+	float: left;
+}

@@ -1,0 +1,13 @@
+grails-app.conf
+grails-app.conf.spring
+grails-app.controllers
+grails-app.controllers.org.raap.domain
+grails-app.controllers.org.raap.workflow
+grails-app.domain.org.raap.domain
+grails-app.domain.org.raap.domain.user
+grails-app.taglib
+grails-app.taglib.org.raap.web.tablibs
+src.templates.artifacts
+target.classes.spring
+test.unit.org.raap.controllers
+test.unit.org.raap.domain
